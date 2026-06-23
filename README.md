@@ -17,10 +17,10 @@ Dataset digunakan secara bertahap sesuai kebutuhan tiap sesi workshop.
 | Session | Input Dataset | Keterangan |
 | ------- | ------------- | ---------- |
 | Session 2 | `pakistan_ecommerce_raw.csv` | Menggunakan raw dataset untuk eksplorasi awal |
-| Session 3 | `pakistan_ecommerce_raw.csv` | Menggunakan raw dataset sebagai input untuk proses data cleaning |
-| Session 4 | `pakistan_ecommerce_03.csv` | Menggunakan output dari Session 3 sebagai input analisis berikutnya |
-| Session 5 | `pakistan_ecommerce_03.csv` | Menggunakan output dari Session 3 sebagai input untuk materi handling missing values |
-| Session 6 | `pakistan_ecommerce_05.csv` | Menggunakan output dari Session 5 sebagai input untuk analisis lanjutan |
+| Session 3 | `pakistan_ecommerce_raw.csv` | Menggunakan raw dataset sebagai input untuk materi data cleaning |
+| Session 4 | `pakistan_ecommerce_03.csv` | Menggunakan output dataset dari Session 3 sebagai input untuk materi descriptive statistics |
+| Session 5 | `pakistan_ecommerce_03.csv` | Menggunakan output dataset dari Session 3 sebagai input untuk materi handling missing values |
+| Session 6 | `pakistan_ecommerce_05.csv` | Menggunakan output dataset dari Session 5 sebagai input untuk materi outliers |
 
 Secara umum, alur dataset adalah sebagai berikut:
 
