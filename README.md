@@ -4,23 +4,25 @@ This repository contains datasets for practicing exploratory data analysis in th
 
 ## Dataset List
 
-| Dataset                              | Description                          | Direct Link                          |
-| ---------------------------- | ------------------------------------ | ------------------------------------ |
-| `pakistan_ecommerce_raw.csv` | Data mentah yang digunakan sebagai dataset awal | https://github.com/jocelynvs/learning-eda-dataset/raw/main/pakistan_ecommerce_raw.csv |
-| `pakistan_ecommerce_03.csv`  | Dataset hasil output dari Session 3: Data Cleaning  | https://github.com/jocelynvs/learning-eda-dataset/raw/main/pakistan_ecommerce_03.csv  |
+| Dataset                      | Description                                                  | Direct Link                                                                           |
+| ---------------------------- | ------------------------------------------------------------ | ------------------------------------------------------------------------------------- |
+| `pakistan_ecommerce_raw.csv` | Data mentah yang digunakan sebagai dataset awal              | https://github.com/jocelynvs/learning-eda-dataset/raw/main/pakistan_ecommerce_raw.csv |
+| `pakistan_ecommerce_03.csv`  | Dataset hasil output dari Session 3: Data Cleaning           | https://github.com/jocelynvs/learning-eda-dataset/raw/main/pakistan_ecommerce_03.csv  |
 | `pakistan_ecommerce_05.csv`  | Dataset hasil output dari Session 5: Handling Missing Values | https://github.com/jocelynvs/learning-eda-dataset/raw/main/pakistan_ecommerce_05.csv  |
+| `hotel_bookings.csv`         | Dataset untuk Final Project                                  | https://github.com/jocelynvs/learning-eda-dataset/raw/main/hotel_bookings.csv         |
 
 ## Dataset Usage Flow
 
 Dataset digunakan secara bertahap sesuai kebutuhan tiap sesi workshop.
 
-| Session | Input Dataset | Keterangan |
-| ------- | ------------- | ---------- |
-| 2 | `pakistan_ecommerce_raw.csv` | Menggunakan raw dataset untuk eksplorasi awal |
-| 3 | `pakistan_ecommerce_raw.csv` | Menggunakan raw dataset sebagai input untuk proses data cleaning |
-| 4 | `pakistan_ecommerce_03.csv` | Menggunakan output dataset dari Session 3 sebagai input untuk analisis descriptive statistics |
-| 5 | `pakistan_ecommerce_03.csv` | Menggunakan output dataset dari Session 3 sebagai input untuk proses handling missing values |
-| 6 | `pakistan_ecommerce_05.csv` | Menggunakan output dataset dari Session 5 sebagai input untuk analisis outliers |
+| Session       | Input Dataset                | Keterangan                                                                                    |
+| ------------- | ---------------------------- | --------------------------------------------------------------------------------------------- |
+| 2             | `pakistan_ecommerce_raw.csv` | Menggunakan raw dataset untuk eksplorasi awal                                                 |
+| 3             | `pakistan_ecommerce_raw.csv` | Menggunakan raw dataset sebagai input untuk proses data cleaning                              |
+| 4             | `pakistan_ecommerce_03.csv`  | Menggunakan output dataset dari Session 3 sebagai input untuk analisis descriptive statistics |
+| 5             | `pakistan_ecommerce_03.csv`  | Menggunakan output dataset dari Session 3 sebagai input untuk proses handling missing values  |
+| 6             | `pakistan_ecommerce_05.csv`  | Menggunakan output dataset dari Session 5 sebagai input untuk analisis outliers               |
+| Final Project | `hotel_bookings.csv`         | Menggunakan dataset hotel bookings untuk latihan analisis EDA secara menyeluruh               |
 
 Secara umum, alur dataset adalah sebagai berikut:
 
@@ -40,6 +42,10 @@ pakistan_ecommerce_raw.csv
                     pakistan_ecommerce_05.csv
                                 │
                                 └── Session 6: Outliers
+
+hotel_bookings.csv
+        │
+        └── Final Project: Exploratory Data Analysis
 ```
 
 ## How to Load the Datasets
@@ -77,10 +83,22 @@ df = pd.read_csv('https://github.com/jocelynvs/learning-eda-dataset/raw/main/pak
 df.head()
 ```
 
+### Final Project Dataset
+
+Dataset ini digunakan untuk Final Project.
+
+```python
+import pandas as pd
+
+df = pd.read_csv('https://github.com/jocelynvs/learning-eda-dataset/raw/main/hotel_bookings.csv')
+df.head()
+```
+
 ## Notes
 
-- Gunakan dataset yang sesuai dengan sesi workshop.
-- Dataset hanya boleh diakses melalui link yang sudah tertera pada tabel **Dataset List** di atas.
-- Jangan menggunakan dataset pribadi atau file lain di luar link yang sudah disediakan agar hasil analisis antar peserta tetap konsisten.
-- Untuk setiap sesi, gunakan input dataset sesuai tabel **Dataset Usage Flow**.
-- Dataset output dari sesi sebelumnya digunakan agar peserta dapat melanjutkan materi tanpa harus mengulang seluruh proses dari awal.
+* Gunakan dataset yang sesuai dengan sesi workshop.
+* Dataset hanya boleh diakses melalui link yang sudah tertera pada tabel **Dataset List** di atas.
+* Jangan menggunakan dataset pribadi atau file lain di luar link yang sudah disediakan agar hasil analisis antar peserta tetap konsisten.
+* Untuk setiap sesi, gunakan input dataset sesuai tabel **Dataset Usage Flow**.
+* Dataset output dari sesi sebelumnya digunakan agar peserta dapat melanjutkan materi tanpa harus mengulang seluruh proses dari awal.
+* Dataset `hotel_bookings.csv` hanya digunakan untuk kebutuhan Final Project.
